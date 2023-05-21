@@ -121,6 +121,33 @@ class _CarritoCompraState extends State<CarritoCompra> {
                             ],
                           ),
                         ),
+                      Padding(
+                        padding: EdgeInsets.all(10),
+                        child: Row(
+                          children: <Widget>[
+                            Expanded(child: Text('SubTotal')),
+                            Text('S/.' + carrito.subTotal.toStringAsFixed(2)),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(10),
+                        child: Row(
+                          children: <Widget>[
+                            Expanded(child: Text('Impuestos')),
+                            Text('S/.' + carrito.impuesto.toStringAsFixed(2)),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(10),
+                        child: Row(
+                          children: <Widget>[
+                            Expanded(child: Text('Total')),
+                            Text('S/.' + carrito.total.toStringAsFixed(2)),
+                          ],
+                        ),
+                      ),
                     ],
                   )
                 : Center(
