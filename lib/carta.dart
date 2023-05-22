@@ -126,17 +126,19 @@ class _CartaState extends State<Carta> {
                         children: <Widget>[
                           Image.asset("assets/image/" + platos[index].imagen),
                           Text(
-                            platos[index].nombre,
+                            platos[index].nombre + '\n\n',
                             style: TextStyle(fontWeight: FontWeight.bold),
                           ),
                           Text(
-                            platos[index].descripcion,
+                            platos[index].descripcion + '\n\n',
                             style: TextStyle(fontWeight: FontWeight.bold),
                           ),
                           Padding(
                             padding: EdgeInsets.only(top: 20),
                             child: Text(
-                              "Valor: " + platos[index].precio.toString(),
+                              "Valor: " +
+                                  platos[index].precio.toString() +
+                                  '\n',
                               style: TextStyle(fontSize: 17),
                             ),
                           ),
@@ -199,17 +201,19 @@ class _CartaState extends State<Carta> {
                         children: <Widget>[
                           Image.asset("assets/image/" + bebidas[index].imagen),
                           Text(
-                            bebidas[index].nombre,
+                            bebidas[index].nombre + '\n\n',
                             style: TextStyle(fontWeight: FontWeight.bold),
                           ),
                           Text(
-                            bebidas[index].descripcion,
+                            bebidas[index].descripcion + '\n\n',
                             style: TextStyle(fontWeight: FontWeight.bold),
                           ),
                           Padding(
                             padding: EdgeInsets.only(top: 20),
                             child: Text(
-                              "Valor: " + bebidas[index].precio.toString(),
+                              "Valor: " +
+                                  bebidas[index].precio.toString() +
+                                  '\n',
                               style: TextStyle(fontSize: 17),
                             ),
                           ),
@@ -272,17 +276,19 @@ class _CartaState extends State<Carta> {
                         children: <Widget>[
                           Image.asset("assets/image/" + postres[index].imagen),
                           Text(
-                            postres[index].nombre,
+                            postres[index].nombre + '\n\n',
                             style: TextStyle(fontWeight: FontWeight.bold),
                           ),
                           Text(
-                            postres[index].descripcion,
+                            postres[index].descripcion + '\n\n',
                             style: TextStyle(fontWeight: FontWeight.bold),
                           ),
                           Padding(
                             padding: EdgeInsets.only(top: 20),
                             child: Text(
-                              "Valor: " + postres[index].precio.toString(),
+                              "Valor: " +
+                                  postres[index].precio.toString() +
+                                  '\n',
                               style: TextStyle(fontSize: 17),
                             ),
                           ),

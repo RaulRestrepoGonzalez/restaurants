@@ -19,25 +19,29 @@ final platos = [
       nombre: 'bandeja paisa',
       precio: 45.500,
       imagen: 'Comida-típica-de-Colombia-Platos-Imprescindibles.jpg',
-      descripcion: 'preparado...'),
+      descripcion:
+          'Ingredientes: frijoles, arroz blanco, chicharrón, carne en polvo, chorizo, huevo frito, plátano maduro, aguacate y arepa'),
   new cartaMap(
       id: 2,
       nombre: 'hamburguesa',
       precio: 15.000,
       imagen: 'comida-rapida-casera.jpg',
-      descripcion: 'preparado...'),
+      descripcion:
+          'Ingredientes: carne parrilla, queso, tocino, lechuga, tomate y mayonesa'),
   new cartaMap(
       id: 3,
       nombre: 'pastas',
       precio: 27.500,
       imagen: 'Recetas-de-comidas-para-niños.jpg',
-      descripcion: 'preparado...'),
+      descripcion:
+          'Ingredientes: pastas preparadas, queso parmesano, queso crema y leche'),
   new cartaMap(
       id: 4,
       nombre: 'carne guisada',
       precio: 35.800,
       imagen: 'cocina-tradicional-calidad.jpg',
-      descripcion: 'preparado...'),
+      descripcion:
+          'Ingredientes: carne de lomo de res, canela, tomillo, pimienta, hoja de laurel, pan frances y papa'),
 ];
 
 final bebidas = [
@@ -46,7 +50,8 @@ final bebidas = [
       nombre: 'limonada',
       precio: 18.000,
       imagen: 'limon.jpg',
-      descripcion: 'preparado...'),
+      descripcion:
+          'Ingredientes: limon mas el añadido elegido por el cliente (cereza, coco, vodka)'),
   new cartaMap(
       id: 6,
       nombre: 'jugo de naranja',
