@@ -147,9 +147,9 @@ class _CartaState extends State<Carta> {
                                   platos[index].id.toString(),
                                   platos[index].nombre,
                                   platos[index].precio,
-                                  '0', //platos[index].unidad = ,
+                                  '1', //platos[index].unidad = ,
                                   platos[index].imagen,
-                                  0, //platos[index].cantidad,
+                                  1, //platos[index].cantidad,
                                 );
                               });
                             },
@@ -220,9 +220,9 @@ class _CartaState extends State<Carta> {
                                   bebidas[index].id.toString(),
                                   bebidas[index].nombre,
                                   bebidas[index].precio,
-                                  '0', //platos[index].unidad,
+                                  '1', //platos[index].unidad,
                                   bebidas[index].imagen,
-                                  0, //platos[index].cantidad,
+                                  1, //platos[index].cantidad,
                                 );
                               });
                             },
@@ -293,9 +293,9 @@ class _CartaState extends State<Carta> {
                                   postres[index].id.toString(),
                                   postres[index].nombre,
                                   postres[index].precio,
-                                  '0', //platos[index].unidad,
+                                  '1', //platos[index].unidad,
                                   postres[index].imagen,
-                                  0, //platos[index].cantidad,
+                                  1, //platos[index].cantidad,
                                 );
                               });
                             },
