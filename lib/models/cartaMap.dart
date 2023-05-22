@@ -57,13 +57,14 @@ final bebidas = [
       nombre: 'jugo de naranja',
       precio: 18.000,
       imagen: 'jugoN.jpg',
-      descripcion: 'preparado...'),
+      descripcion:
+          'Ingredientes: sumo de naranja exprimido el añadido elegido por el cliente (cereza, fresa, vodka)'),
   new cartaMap(
       id: 7,
       nombre: 'coctel sin alcohol',
       precio: 25.000,
       imagen: 'cocktail-3327242_1920-1170x780.jpg',
-      descripcion: 'preparado...'),
+      descripcion: 'Ingredientes: fruta t tipo de soda a eleccion del cliente'),
 ];
 
 final postres = [
@@ -72,18 +73,20 @@ final postres = [
       nombre: 'noche nevada',
       precio: 45.000,
       imagen: 'nochenevada.jpg',
-      descripcion: 'preparado...'),
+      descripcion:
+          'Ingredientes: helado de vainilla, frutos rojos y crema batida'),
   new cartaMap(
       id: 9,
       nombre: 'flan con galletas y chocolate',
       precio: 63.000,
       imagen:
           'paso_a_paso_para_realizar_tarta_de_flan_con_galletas_y_chocolate_sin_azucar_resultado_final_1ce8842f_600x600.jpg',
-      descripcion: 'preparado...'),
+      descripcion:
+          'Ingredientes: galletas, flan, chocolate fundido y crema batida'),
   new cartaMap(
       id: 10,
       nombre: 'gelatina',
       precio: 25.000,
       imagen: 'gelatina.jpg',
-      descripcion: 'preparado...'),
+      descripcion: 'Ingredientes: sabor al gusto del cliente'),
 ];
