@@ -129,6 +129,10 @@ class _CartaState extends State<Carta> {
                             platos[index].nombre,
                             style: TextStyle(fontWeight: FontWeight.bold),
                           ),
+                          Text(
+                            platos[index].descripcion,
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
                           Padding(
                             padding: EdgeInsets.only(top: 20),
                             child: Text(
@@ -143,7 +147,7 @@ class _CartaState extends State<Carta> {
                                   platos[index].id.toString(),
                                   platos[index].nombre,
                                   platos[index].precio,
-                                  '0', //platos[index].unidad,
+                                  '0', //platos[index].unidad = ,
                                   platos[index].imagen,
                                   0, //platos[index].cantidad,
                                 );
@@ -196,6 +200,10 @@ class _CartaState extends State<Carta> {
                           Image.asset("assets/image/" + bebidas[index].imagen),
                           Text(
                             bebidas[index].nombre,
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          Text(
+                            bebidas[index].descripcion,
                             style: TextStyle(fontWeight: FontWeight.bold),
                           ),
                           Padding(
@@ -265,6 +273,10 @@ class _CartaState extends State<Carta> {
                           Image.asset("assets/image/" + postres[index].imagen),
                           Text(
                             postres[index].nombre,
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          Text(
+                            postres[index].descripcion,
                             style: TextStyle(fontWeight: FontWeight.bold),
                           ),
                           Padding(
