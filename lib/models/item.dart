@@ -55,4 +55,22 @@ class Item {
 
     return data;
   }
+
+  Item copyWith({
+    String? id,
+    String? nombre,
+    double? precio,
+    String? unidad,
+    String? imagen,
+    int? cantidad,
+  }) {
+    return Item(
+      id: id ?? this.id,
+      nombre: nombre ?? this.nombre,
+      precio: precio ?? this.precio,
+      unidad: unidad ?? this.unidad,
+      imagen: imagen ?? this.imagen,
+      cantidad: cantidad ?? this.cantidad,
+    );
+  }
 }

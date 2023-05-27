@@ -92,6 +92,41 @@ class Carrito extends ChangeNotifier {
     }
   }
 
+  void agregarItem2(String producto_id, String nombre, double precio,
+      String unidad, String imagen, int cantidad) {
+    if (_items.containsKey(producto_id)) {
+      _items.update(
+          producto_id,
+          (old) => Item(
+              id: old.id,
+              nombre: old.nombre,
+              precio: old.precio,
+              unidad: old.unidad,
+              imagen: old.imagen,
+              cantidad: old.cantidad + 1));
+    } else {
+      _items.putIfAbsent(
+        producto_id,
+        () => Item(
+            id: producto_id,
+            nombre: nombre,
+            precio: precio,
+            unidad: unidad,
+            imagen: imagen,
+            cantidad: cantidad), // Usa la cantidad proporcionada
+      );
+    }
+  }
+
+  void incrementarCantidadItem2(String producto_id) {
+    if (_items.containsKey(producto_id)) {
+      _items.update(
+        producto_id,
+        (old) => old.copyWith(cantidad: old.cantidad + 1),
+      );
+    }
+  }
+
   void carrito() {
     _items = {};
   }
