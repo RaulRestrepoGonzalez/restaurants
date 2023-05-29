@@ -127,6 +127,20 @@ class Carrito extends ChangeNotifier {
     }
   }
 
+  void decrementarCantidadItem2(String producto_id) {
+    if (_items.containsKey(producto_id)) {
+      final item = _items[producto_id]!;
+      if (item.cantidad > 1) {
+        _items.update(
+          producto_id,
+          (old) => old.copyWith(cantidad: old.cantidad - 1),
+        );
+      } else {
+        _items.remove(producto_id);
+      }
+    }
+  }
+
   void carrito() {
     _items = {};
   }
