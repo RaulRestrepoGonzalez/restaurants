@@ -209,12 +209,12 @@ class _CartaState extends State<Carta> {
                             style: TextStyle(fontWeight: FontWeight.bold),
                           ),
                           Padding(
-                            padding: EdgeInsets.only(top: 20),
+                            padding: EdgeInsets.only(top: 17),
                             child: Text(
                               "Valor: " +
                                   bebidas[index].precio.toString() +
                                   '\n',
-                              style: TextStyle(fontSize: 17),
+                              style: TextStyle(fontSize: 12),
                             ),
                           ),
                           RaisedButton.icon(
