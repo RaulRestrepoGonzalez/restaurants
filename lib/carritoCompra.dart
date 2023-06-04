@@ -3,6 +3,7 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:restaurants/carrito/carrito.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class CarritoCompra extends StatefulWidget {
   const CarritoCompra({Key? key}) : super(key: key);
@@ -155,7 +156,7 @@ class _CarritoCompraState extends State<CarritoCompra> {
                 ),
         ),
         floatingActionButton: FloatingActionButton(
-          onPressed: () {
+          onPressed: () async {
             String pedido = '';
             carrito.items.forEach((key, value) {
               pedido = '$pedido' +
@@ -176,9 +177,24 @@ class _CarritoCompraState extends State<CarritoCompra> {
                 'Impuesto :' +
                 carrito.impuesto.toStringAsFixed(2) +
                 '\n';
-            pedido =
-                '$pedido' + 'Total :' + carrito.total.toStringAsFixed(2) + '\n';
-            log(pedido);
+            pedido = '$pedido' +
+                'Total :' +
+                carrito.total.toStringAsFixed(2) +
+                '\n***************************\n';
+
+            //vinculo de whatsapp
+            String celular = "+573016582921";
+            String mensaje = pedido;
+            String url = "whatsapp://send?phone=$celular&text=$mensaje";
+
+            if (await canLaunch(url)) {
+              await (launch(url));
+              log(pedido);
+              //throw ('No se envio el mensaje');
+            } else {
+              await (launch(url));
+              log(pedido);
+            }
           },
           backgroundColor: Colors.red,
           child: Icon(
